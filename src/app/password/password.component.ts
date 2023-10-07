@@ -9,9 +9,6 @@ export class PasswordComponent {
   passwordStatus = "empty";
   regStrongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})');
   regMediumPassword = new RegExp('(?=.{8,})(?=.*[a-z])(?=.*[0-9])');
-  regOnlyNums = new RegExp('(?=.{8,})(?=.*[0-9])');
-  regOnlyLetters = new RegExp('(?=.{8,})(?=.*[a-z])');
-  regOnlySymbols = new RegExp('(?=.{8,})(?=.*[^A-Za-z0-9])');
 
 
   onInputChange(value: string): void {
